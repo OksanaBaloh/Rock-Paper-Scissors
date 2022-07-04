@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <main>
+        <h2 id="result">Choose your weapon</h2>
+        <p id="message">Whoever scores 5 points first will win</p>
+        <div class="scores_container">
+            <div class="scores_box">
+                <div class="weapon" id="player_weapon">?</div>
+                <p>Player: <span id="player_scores">0</span></p>
+            </div>
+            <div class="scores_box">
+                <div class="weapon"  id="computer_weapon">?</div>
+                <p>Computer:<span id="computer_scores">0</span></p>
+            </div>
+        </div>
+        <div class="buttons_container">
+            <button class="button button_sign">
+                <div class= "sign" id="rock_sign">✊</div>
+            </button>
+            <button class="button button_sign">
+                <div class= "sign" id="paper_sign">✋</div>
+            </button>
+            <button class="button button_sign">
+                <div class= "sign" id="scissors_sign">✌️</div>
+            </button>
+        </div>
+
+    </main>
+    <footer>
+        <div><p>Copyrigt &#169 By Oksana Baloh 2022</p></div>
+    </footer>
+    <div class="modal" id="endgame_modal">
+        <p class="modal_title" id="endgame_msg"></p>
+        <button class="button btn_restart" id="restart_btn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
